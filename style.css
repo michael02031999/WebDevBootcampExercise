@@ -55,6 +55,7 @@ table {
 
 html {
     font-size: 16px;
+    font-family: sans-serif;
 }
 
 img {
@@ -76,23 +77,34 @@ body {
 .pricing-table {
     background-color: white;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     border-radius: 0.6rem;
+    width: 56%;
 }
 
 .pricing-plan {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 2em 0;
 }
 
 .box-1 {
-    background-color: orange;
+    
 }
 .box-2 {
-    background-color: red;
+    
 }
 .box-3 {
-    background-color: green;
+    
 }
+
+.pricing-plan ul li {
+    color: blue;
+}
+
+.pricing-header {
+    color: gray;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
