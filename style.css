@@ -21,7 +21,6 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-    box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -55,7 +54,8 @@ table {
 
 html {
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
 }
 
 img {
@@ -67,7 +67,7 @@ img {
 /*-----------------------------------*/
 
 body {
-    background-color: lightblue;
+    background-color: #60a9ff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,15 +77,17 @@ body {
 .pricing-table {
     background-color: white;
     display: flex;
-    flex-direction: row;
-    border-radius: 0.6rem;
-    width: 56%;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 960px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .pricing-plan {
-    display: flex;
-    flex-direction: column;
-    padding: 2em 0;
+    border-bottom: 1px solid #e1e1e1;
 }
 
 .box-1 {
@@ -104,7 +106,11 @@ body {
 
 .pricing-header {
     color: gray;
-    text-transform: uppercase;
     font-weight: 700;
 }
 
+@media (min-width: 900px) {
+    .pricing-table {
+        flex-direction: row;
+    }
+}
